@@ -1,0 +1,45 @@
+<h ... numero> = titolo di livello numero
+<p> = paragrafo
+<hr> = a capo con linea
+<br> = a capo
+<b> = grassetto
+<i> = corsivo
+<u> = sottolineato
+<s> = barrato
+<sup> = apice
+<sub> = pedice
+<strong> = evidenziare
+<em> = enfatizzare
+<q> = citazione breve ("")
+<blockquote> = citazione lunga ("")
+<table> = crea tabella
+    <tr> = nuova colonna
+        <th> = titolo
+        <td> = contenuto
+    <\tr> = prossima righa
+</table> {
+    border = 1
+}
+<ul> = unordered list
+<ol> = ordered list
+<li> = nuova voce nell'elenco
+<hgroup> = titoli
+<figure>
+    <img> {
+        src = "file_path"
+        alt= "descrizione per audio reader"
+        width = "grandezza"
+    }
+    <figcaption> = didascalia immagine
+</figure>
+
+suddivisione tabella {
+<thead> = intestazione
+<tbody> = contenuto
+<tfoot> = fine (risultati)
+}
+
+carattere & {
+    riferimenti ai caratteri unicode =
+    &tipo; valore
+}
