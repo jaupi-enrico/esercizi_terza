@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.1"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-07 08:15:59 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA3OyIwODowNTowNiAiOzIyNjA="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA3OyIwODoxNTo1OSAiOzM7MjM3OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, N, numN" type="Integer" array="False" size=""/>
+            <assign variable="NumN" expression="0"/>
+            <do expression="N &gt; 0">
+                <output expression="&quot;Inserisci Num&quot; &amp; (numN + 1) &amp; &quot;: &quot;" newline="True"/>
+                <input variable="N"/>
+                <if expression="N &gt; 0">
+                    <then>
+                        <assign variable="numN" expression="numN + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <output expression="&quot;programma terminato dopo &quot; &amp; numN &amp; &quot; inserimenti&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

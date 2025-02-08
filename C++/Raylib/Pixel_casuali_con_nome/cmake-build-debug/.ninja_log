@@ -1,0 +1,14 @@
+# ninja log v6
+8	681	7555676662027503	CMakeFiles/raylib_template_portable_windows.dir/main.cpp.obj	6799268a1987a3e1
+682	1115	7555676668764131	raylib_template_portable_windows.exe	f88f1da67d994419
+4	16	7544303178067728	clean	8def809fb8781c87
+8	617	7555674303721026	CMakeFiles/raylib_template_portable_windows.dir/prova.cpp.obj	78dea867257f22dd
+3	550	7555685377934146	build.ninja	3747f65a4680fb71
+8	495	7555685233884290	CMakeFiles/RaylibExample.dir/main.cpp.obj	1f352468db5f4d91
+675	1296	7555684485657333	RaylibExample.exe	d632c46bdc0ad4d9
+9	687	7555685383965087	CMakeFiles/RaylibExample.dir/main.cpp.obj	b85a31af852ef6bb
+688	1206	7555685390744988	RaylibExample.exe	a6c659e18945d4fa
+9	609	7555685486550061	CMakeFiles/RaylibExample.dir/main.cpp.obj	b85a31af852ef6bb
+610	1093	7555685492566778	RaylibExample.exe	a6c659e18945d4fa
+9	641	7555685544548480	CMakeFiles/RaylibExample.dir/main.cpp.obj	b85a31af852ef6bb
+642	1107	7555685550867641	RaylibExample.exe	a6c659e18945d4fa

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.9"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-01 12:16:20 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTo0MToxNSAiOzIyNjA="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTo0MToxNiAiOzE7NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTozNjozNyAiO0VzLjguZnByZzs1NTE4"/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yNDsiMDU6MjQ6MjMgIjsxOzI2MzI="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTAxOyIxMjoxNjoyMCAiOzI7MjM1Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num1, Num2, Num3, Min" type="Real" array="False" size=""/>
+            <output expression="&quot;inserisci il primo numero: &quot;" newline="True"/>
+            <input variable="Num1"/>
+            <output expression="&quot;inserisci il secondo numero: &quot;" newline="True"/>
+            <input variable="Num2"/>
+            <output expression="&quot;inserisci il terzo numero: &quot;" newline="True"/>
+            <input variable="Num3"/>
+            <if expression="Num1 &lt; Num2 &amp;&amp; Num1 &lt; Num3">
+                <then>
+                    <assign variable="Min" expression="Num1"/>
+                </then>
+                <else>
+                    <if expression="Num2 &lt; Num3">
+                        <then>
+                            <assign variable="Min" expression="Num2"/>
+                        </then>
+                        <else>
+                            <assign variable="Min" expression="Num3"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Il numero minore &#232;: &quot; &amp; Min" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

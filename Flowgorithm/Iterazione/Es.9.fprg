@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.1"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-08 12:30:36 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA3OyIwODowNTowNiAiOzIyNjA="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA4OyIxMjozMDozNiAiOzE0OzI0MTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il numero di numeri: &quot;" newline="True"/>
+            <input variable="N"/>
+            <declare name="numeri" type="Integer" array="True" size="N"/>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <output expression="&quot;Inserisci num&quot; &amp; i &amp; &quot;: &quot;" newline="True"/>
+                <input variable="numeri[i-1]"/>
+            </for>
+            <output expression="numeri[0] &amp; &quot; &#232; il primo numero, mentre &quot; &amp; numeri[N-1] &amp; &quot; &#232; l'ultimo numero&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

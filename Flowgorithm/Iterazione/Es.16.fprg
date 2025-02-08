@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.1"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-08 01:34:06 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA3OyIwODowNTowNiAiOzIyNjA="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA4OyIwMTozNDowNiAiOzMxOzI0MTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, i, cont" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci N: &quot;" newline="True"/>
+            <input variable="N"/>
+            <declare name="seq" type="Integer" array="True" size="N"/>
+            <assign variable="cont" expression="0"/>
+            <for variable="i" start="0" end="N-1" direction="inc" step="1">
+                <output expression="&quot;inserisci bit&quot; &amp; i" newline="True"/>
+                <do expression="seq[i] != 0 &amp;&amp; seq[i] != 1">
+                    <input variable="seq[i]"/>
+                </do>
+            </for>
+            <for variable="i" start="0" end="N-1" direction="inc" step="1">
+                <if expression="seq[i] == 1">
+                    <then>
+                        <assign variable="cont" expression="cont + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="cont % 2 == 0">
+                <then>
+                    <output expression="1" newline="True"/>
+                </then>
+                <else>
+                    <output expression="0" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.1"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-07 08:41:53 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA3OyIwODowNTowNiAiOzIyNjA="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA3OyIwODo0MTo1MyAiOzc7MjM3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, i, numPari, numDisp, Num" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci N: &quot;" newline="True"/>
+            <do expression="N &lt; 0">
+                <input variable="N"/>
+            </do>
+            <assign variable="numPari" expression="0"/>
+            <assign variable="numDisp" expression="0"/>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <output expression="&quot;Inserisci num&quot; &amp; i &amp; &quot;: &quot;" newline="True"/>
+                <input variable="Num"/>
+                <if expression="Num % 2 == 0">
+                    <then>
+                        <assign variable="numPari" expression="numPari + 1"/>
+                    </then>
+                    <else>
+                        <assign variable="numDisp" expression="numDisp + 1"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Hai inserito &quot; &amp; numPari &amp; &quot; numeri pari e &quot; &amp; numDisp &amp; &quot; numeri dipari&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

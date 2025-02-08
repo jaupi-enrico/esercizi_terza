@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.14 pag.32"/>
+        <attribute name="authors" value="enric"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-29 04:17:27 "/>
+        <attribute name="created" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yOTsiMDQ6MDc6NDkgIjsyNTM3"/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yOTsiMDQ6MTc6MjcgIjsyOzI2NDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Quantity, Years, OriginalQuantity" type="Real" array="False" size=""/>
+            <assign variable="Quantity" expression="0"/>
+            <output expression="&quot;Inserisci la Quantita di Cesio-137 (in grammi): &quot;" newline="True"/>
+            <input variable="Quantity"/>
+            <assign variable="OriginalQuantity" expression="Quantity"/>
+            <assign variable="Years" expression="0"/>
+            <while expression="Quantity &gt;= 0.001">
+                <assign variable="Years" expression="Years + 30"/>
+                <assign variable="Quantity" expression="Quantity / 2"/>
+            </while>
+            <output expression="OriginalQuantity &amp; &quot; grammi di Cesio-137 ci impiegheranno &quot; &amp; Years &amp; &quot; anni per diventare meno di 0.1 grammi&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

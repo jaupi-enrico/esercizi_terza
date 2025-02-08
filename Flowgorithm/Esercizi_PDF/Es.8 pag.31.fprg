@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.8 pag.31"/>
+        <attribute name="authors" value="enric"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-29 03:47:56 "/>
+        <attribute name="created" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yOTsiMDM6NDQ6MDggIjsyNTMy"/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yOTsiMDM6NDc6NTYgIjsyOzI2NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NEuro, NBitcoin, Cambio" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il numero di Euro da convertire in Bitcoin: &quot;" newline="True"/>
+            <input variable="NEuro"/>
+            <assign variable="Cambio" expression="0.000017"/>
+            <assign variable="NBitcoin" expression="NEuro * Cambio"/>
+            <output expression="NEuro &amp; &quot;&#8364; sono &quot; &amp; NBitcoin &amp; &quot; bitcoin&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

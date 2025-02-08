@@ -1,0 +1,3 @@
+C:/Users/78313537/OneDrive - IIS Castelli/Informatica/C++/Esercizi_PDF/Funzioni/Lepre_Tartaruga/cmake-build-debug/CMakeFiles/Lepre_Tartaruga.dir
+C:/Users/78313537/OneDrive - IIS Castelli/Informatica/C++/Esercizi_PDF/Funzioni/Lepre_Tartaruga/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/78313537/OneDrive - IIS Castelli/Informatica/C++/Esercizi_PDF/Funzioni/Lepre_Tartaruga/cmake-build-debug/CMakeFiles/rebuild_cache.dir

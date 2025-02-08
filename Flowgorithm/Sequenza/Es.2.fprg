@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.1"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 01:01:50 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIxMjo1MToyOSAiOzIyNjg="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTowMTo1MCAiOzI7MjM2NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il numero a: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Inserisci il numero a: &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Inserisci il numero a: &quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="(a*a) + (b*b) = (c*c)">
+                <then>
+                    <output expression="&quot;&#232; una terna&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;non &#232; una terna&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

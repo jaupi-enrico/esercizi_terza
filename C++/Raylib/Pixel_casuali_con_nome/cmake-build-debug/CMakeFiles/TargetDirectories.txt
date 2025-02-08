@@ -1,0 +1,3 @@
+C:/Users/enric/OneDrive - IIS Castelli/Informatica/C++/Raylib/Pixel_casuali_con_nome/cmake-build-debug/CMakeFiles/RaylibExample.dir
+C:/Users/enric/OneDrive - IIS Castelli/Informatica/C++/Raylib/Pixel_casuali_con_nome/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/enric/OneDrive - IIS Castelli/Informatica/C++/Raylib/Pixel_casuali_con_nome/cmake-build-debug/CMakeFiles/rebuild_cache.dir

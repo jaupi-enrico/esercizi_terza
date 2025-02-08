@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.1"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-08 12:58:47 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA3OyIwODowNTowNiAiOzIyNjA="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA4OyIxMjo1ODo0NyAiOzIyOzI0Mjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, i, sum, num, j" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il numero di caselle: &quot;" newline="True"/>
+            <input variable="N"/>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <assign variable="num" expression="1"/>
+                <if expression="i == 1">
+                    <then/>
+                    <else>
+                        <for variable="j" start="1" end="i-1" direction="inc" step="1">
+                            <assign variable="num" expression="num * 2"/>
+                        </for>
+                    </else>
+                </if>
+                <assign variable="sum" expression="sum + num"/>
+            </for>
+            <output expression="&quot;i chicchi di riso sono &quot; &amp; sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

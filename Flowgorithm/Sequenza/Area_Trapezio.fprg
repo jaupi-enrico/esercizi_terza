@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Area_Trapezio"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-17 01:50:13 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyNDsyMDI0LTA5LTE3OyIwMTo0NToxNSAiOzIyNjc="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyNDsyMDI0LTA5LTE3OyIwMTo1MDoxMyAiOzE7MjM2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="BaseMaggiore, BaseMinore, Altezza, Area" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci la base maggiore:&quot;" newline="True"/>
+            <input variable="BaseMaggiore"/>
+            <output expression="&quot;Inserisci base minore:&quot;" newline="True"/>
+            <input variable="BaseMinore"/>
+            <output expression="&quot;Inserisci l'altezza:&quot;" newline="True"/>
+            <input variable="Altezza"/>
+            <assign variable="Area" expression="(BaseMinore + BaseMaggiore) * Altezza"/>
+            <output expression="&quot;L'area &#232; di: &quot; &amp; Area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

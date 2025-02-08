@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.6"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 01:28:35 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMToxMTozMiAiOzIyNTY="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMToxMTozNCAiOzE7NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTowMzo1MiAiO0VzLjUuZnByZzs1NTAz"/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMToyODozNSAiOzE7MjM3NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="SpazioFrenata, Velocita" type="Real" array="False" size=""/>
+            <declare name="CondizioneAsfalto" type="String" array="False" size=""/>
+            <output expression="&quot;Inserisci la velocit&#224;: &quot;" newline="True"/>
+            <input variable="Velocita"/>
+            <output expression="&quot;Inserisci le condizioni dell'asfalto (ruvido, liscio, bagnato, ghiacciato): &quot;" newline="True"/>
+            <input variable="CondizioneAsfalto"/>
+            <assign variable="SpazioFrenata" expression="Velocita*Velocita/250"/>
+            <if expression="CondizioneAsfalto == &quot;ruvido&quot;">
+                <then>
+                    <assign variable="SpazioFrenata" expression="SpazioFrenata*0.6"/>
+                </then>
+                <else>
+                    <if expression="CondizioneAsfalto == &quot;liscio&quot;">
+                        <then>
+                            <assign variable="SpazioFrenata" expression="SpazioFrenata*0.5"/>
+                        </then>
+                        <else>
+                            <if expression="CondizioneAsfalto == &quot;bagnato&quot;">
+                                <then>
+                                    <assign variable="SpazioFrenata" expression="SpazioFrenata*0.4"/>
+                                </then>
+                                <else>
+                                    <if expression="CondizioneAsfalto == &quot;ghiacciato&quot;">
+                                        <then>
+                                            <assign variable="SpazioFrenata" expression="SpazioFrenata*0.1"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Condizione asfalto non valida&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="SpazioFrenata" expression="SpazioFrenata + Velocita/3.6"/>
+            <output expression="&quot;Lo spazio di frenata &#232; di: &quot; &amp; SpazioFrenata" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

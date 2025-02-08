@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.11"/>
+        <attribute name="authors" value="enric"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-01 12:32:22 "/>
+        <attribute name="created" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yNDsiMDU6MjQ6MzAgIjsyNTIy"/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yNDsiMDU6MjQ6MzQgIjsxOzc4MzEzNTM3O0lORk8wNVBDMjM7MjAyNC0wOS0yNDsiMDE6NDE6MTUgIjtFcy4xMC5mcHJnOzU4MTY="/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yNDsiMDU6MzI6NTAgIjsyOzI2MzI="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTAxOyIxMjozMjoyMiAiOzM7MjM1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num1, Num2, Num3, NumTemp" type="Real" array="False" size=""/>
+            <output expression="&quot;inserisci il primo numero: &quot;" newline="True"/>
+            <input variable="Num1"/>
+            <output expression="&quot;inserisci il secondo numero: &quot;" newline="True"/>
+            <input variable="Num2"/>
+            <output expression="&quot;inserisci il terzo numero: &quot;" newline="True"/>
+            <input variable="Num3"/>
+            <output expression="&quot;I numeri in ordine sono: &quot;" newline="True"/>
+            <if expression="Num1 &lt; Num2 &amp;&amp; Num1 &lt; Num3">
+                <then>
+                    <output expression="Num1" newline="True"/>
+                    <if expression="Num2 &lt; Num3">
+                        <then>
+                            <output expression="Num2" newline="True"/>
+                            <output expression="Num3" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="Num3" newline="True"/>
+                            <output expression="Num2" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Num2 &lt; Num3">
+                        <then>
+                            <output expression="Num2" newline="True"/>
+                            <if expression="Num1 &lt; Num3">
+                                <then>
+                                    <output expression="Num1" newline="True"/>
+                                    <output expression="Num3" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="Num3" newline="True"/>
+                                    <output expression="Num1" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="Num3" newline="True"/>
+                            <if expression="Num1 &lt; Num2">
+                                <then>
+                                    <output expression="Num1" newline="True"/>
+                                    <output expression="Num2" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="Num2" newline="True"/>
+                                    <output expression="Num1" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

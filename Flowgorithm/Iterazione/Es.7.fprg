@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.1"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-08 12:19:53 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA3OyIwODowNTowNiAiOzIyNjA="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA4OyIxMjoxOTo1MyAiOzExOzI0MjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, sum, cont, j" type="Integer" array="False" size=""/>
+            <declare name="numbers" type="Integer" array="True" size="2"/>
+            <assign variable="cont" expression="0"/>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <for variable="j" start="1" end="2" direction="inc" step="1">
+                    <output expression="&quot;Inserisci num&quot; &amp; j &amp; &quot;: &quot;" newline="True"/>
+                    <input variable="numbers[j-1]"/>
+                </for>
+                <if expression="numbers[0] + numbers[1] == 100">
+                    <then>
+                        <assign variable="cont" expression="cont + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;ci sono &quot; &amp; cont &amp; &quot; coppie&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

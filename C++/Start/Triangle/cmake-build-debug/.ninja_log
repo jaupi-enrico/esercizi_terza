@@ -1,0 +1,6 @@
+# ninja log v6
+16	1080	7514940192988038	CMakeFiles/Triangle.dir/main.cpp.obj	b3820567b9b4dbf9
+1081	1415	7514940203637723	Triangle.exe	d79fe3bad051bbd3
+47	1395	7521702615009252	build.ninja	9a3a6bfcb1c0c2e
+10	2034	7521702616272460	CMakeFiles/Triangle.dir/main.cpp.obj	b3820567b9b4dbf9
+2035	2585	7521702636538578	Triangle.exe	d79fe3bad051bbd3

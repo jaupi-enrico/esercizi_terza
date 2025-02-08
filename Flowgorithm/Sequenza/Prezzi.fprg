@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Prezzi"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 12:51:07 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIxMjo0Mzo0MSAiOzIyNjM="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIxMjo1MTowNyAiOzE7MjM3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="CostoAlPezzo, Costo" type="Real" array="False" size=""/>
+            <declare name="Pezzi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il prezzo per pezzo: &quot;" newline="True"/>
+            <input variable="CostoAlPezzo"/>
+            <output expression="&quot;Inserisci quantit&#224;: &quot;" newline="True"/>
+            <input variable="Pezzi"/>
+            <assign variable="Costo" expression="Pezzi * CostoAlPezzo"/>
+            <if expression="Pezzi &gt; 10">
+                <then>
+                    <assign variable="Costo" expression="Costo * 0.9"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Il prezzo totale &#232;: &quot; &amp; Costo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

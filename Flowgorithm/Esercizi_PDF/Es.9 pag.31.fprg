@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.9 pag.31"/>
+        <attribute name="authors" value="enric"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-29 03:58:36 "/>
+        <attribute name="created" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yOTsiMDM6NDg6MDUgIjsyNTMz"/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yOTsiMDM6NTg6MzYgIjsyOzI2NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Type" type="Integer" array="False" size=""/>
+            <declare name="Weight, Price" type="Real" array="False" size=""/>
+            <assign variable="Type" expression="0"/>
+            <output expression="&quot;Inserisci il tipo di spedione:&quot;" newline="True"/>
+            <output expression="&quot;1) Normale&quot;" newline="True"/>
+            <output expression="&quot;2) Celere1&quot;" newline="True"/>
+            <output expression="&quot;3) Celere2&quot;" newline="True"/>
+            <while expression="Type &lt; 1 || Type &gt; 3">
+                <input variable="Type"/>
+            </while>
+            <output expression="&quot;Inserisci il peso del pacco (in kg): &quot;" newline="True"/>
+            <input variable="Weight"/>
+            <if expression="Type == 1">
+                <then>
+                    <assign variable="Price" expression="3 + (Weight * 3)"/>
+                </then>
+                <else>
+                    <if expression="Type == 2">
+                        <then>
+                            <assign variable="Price" expression="7 + (Weight * 4)"/>
+                        </then>
+                        <else>
+                            <assign variable="Price" expression="13 + (Weight * 6)"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Il prezzo &#232; di &quot; &amp; Price &amp; &quot;&#8364;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

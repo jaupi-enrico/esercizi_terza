@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.9"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 01:55:24 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTo0MToxNSAiOzIyNjA="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTo0MToxNiAiOzE7NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTozNjozNyAiO0VzLjguZnByZzs1NTE4"/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTo1NToyNCAiOzE7MjM3Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Tipo, Costo" type="Integer" array="False" size=""/>
+            <declare name="Durata, Priorit&#224;" type="String" array="False" size=""/>
+            <output expression="&quot;Inserisci il tipo di abbonamento: &quot;" newline="True"/>
+            <input variable="Tipo"/>
+            <if expression="Tipo == 1">
+                <then>
+                    <output expression="&quot;Inserisci la durata (S, M, A): &quot;" newline="True"/>
+                    <input variable="Durata"/>
+                    <if expression="Durata == &quot;S&quot;">
+                        <then>
+                            <assign variable="Costo" expression="10"/>
+                        </then>
+                        <else>
+                            <if expression="Durata == &quot;M&quot;">
+                                <then>
+                                    <assign variable="Costo" expression="30"/>
+                                </then>
+                                <else>
+                                    <if expression="Durata == &quot;A&quot;">
+                                        <then>
+                                            <assign variable="Costo" expression="250"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Durata non valida&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Tipo == 2">
+                        <then>
+                            <output expression="&quot;Inserisci la durata (S, M, A): &quot;" newline="True"/>
+                            <input variable="Durata"/>
+                            <if expression="Durata == &quot;S&quot;">
+                                <then>
+                                    <assign variable="Costo" expression="5"/>
+                                </then>
+                                <else>
+                                    <if expression="Durata == &quot;M&quot;">
+                                        <then>
+                                            <assign variable="Costo" expression="20"/>
+                                        </then>
+                                        <else>
+                                            <if expression="Durata == &quot;A&quot;">
+                                                <then>
+                                                    <assign variable="Costo" expression="150"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Durata non valida&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="Tipo == 3">
+                                <then>
+                                    <output expression="&quot;Inserisci la durata (S, M, A): &quot;" newline="True"/>
+                                    <input variable="Durata"/>
+                                    <if expression="Durata == &quot;S&quot;">
+                                        <then>
+                                            <assign variable="Costo" expression="15"/>
+                                        </then>
+                                        <else>
+                                            <if expression="Durata == &quot;M&quot;">
+                                                <then>
+                                                    <assign variable="Costo" expression="40"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="Durata == &quot;A&quot;">
+                                                        <then>
+                                                            <assign variable="Costo" expression="300"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Durata non valida&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Tipo non valido&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Inserisci la priorit&#224; (alta/bassa): &quot;" newline="True"/>
+            <input variable="Priorit&#224;"/>
+            <if expression="Priorit&#224; == &quot;bassa&quot;">
+                <then>
+                    <assign variable="Costo" expression="Costo * 0.8"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Il costo dell'abbonamento &#232; di: &quot; &amp; Costo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

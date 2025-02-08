@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.3"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 01:03:21 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTowMjoxMSAiOzIyNTM="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTowMjoxMyAiOzE7NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIxMjo1NzowNiAiO0VzLjIuZnByZzs1NTA3"/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTowMzoyMSAiOzE7MjM2Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il numero: &quot;" newline="True"/>
+            <input variable="Numero"/>
+            <if expression="Numero &lt;= -1 &amp;&amp; Numero &gt;= -10">
+                <then>
+                    <assign variable="Numero" expression="-1 * Numero"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Il numero &#232;: &quot; &amp; Numero" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

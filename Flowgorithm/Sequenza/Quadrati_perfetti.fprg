@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Quadrati_perfetti"/>
+        <attribute name="authors" value="enric"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-30 08:27:41 "/>
+        <attribute name="created" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yODsiMDQ6MDg6MzcgIjsyNTM0"/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yODsiMDQ6MjE6MzcgIjsxOzI2Mzc="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTMwOyIwODoyNzo0MSAiOzE7MjM3NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, low, high, result, mid" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il numero: &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="low" expression="1"/>
+            <assign variable="high" expression="n / 2"/>
+            <assign variable="result" expression="0"/>
+            <while expression="low &lt;= high">
+                <assign variable="mid" expression="(low + high) / 2"/>
+                <if expression="(mid * mid) &lt; n">
+                    <then>
+                        <assign variable="result" expression="mid * mid"/>
+                        <assign variable="low" expression="mid + 1"/>
+                    </then>
+                    <else>
+                        <assign variable="high" expression="mid - 1"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Il pi&#249; grande quadrato perfetto minore a &quot; &amp; n &amp; &quot; &#232; &quot; &amp; result" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

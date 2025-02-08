@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.13 pag.32"/>
+        <attribute name="authors" value="enric"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-29 04:07:44 "/>
+        <attribute name="created" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yOTsiMDM6NTk6MjAgIjsyNTMy"/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yOTsiMDQ6MDc6NDQgIjsyOzI2NDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Heigth" type="Integer" array="False" size=""/>
+            <declare name="Time" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci l'altezza iniziale (in metri): &quot;" newline="True"/>
+            <input variable="Heigth"/>
+            <assign variable="Time" expression="0"/>
+            <while expression="Heigth &gt; 0">
+                <assign variable="Time" expression="Time + 0.1"/>
+                <assign variable="Heigth" expression="Heigth - ((9.81 * Time * Time) / 2)"/>
+                <if expression="Heigth &gt;= 0">
+                    <then>
+                        <output expression="&quot;L'altezza dopo &quot; &amp; Time &amp; &quot; secondi &#232; di &quot; &amp; Heigth" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;L'altezza dopo &quot; &amp; Time &amp; &quot; secondi &#232; di 0&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

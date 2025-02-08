@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.31 pag.33"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-04 07:04:35 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTMwOyIwODozNjowNCAiOzIyNjY="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTMwOyIwODo1NjoyNCAiOzQ7MjM4MQ=="/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0xMC0wNDsiMDc6MDQ6MzUgIjsyOzI2MjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, divisore, delta" type="Integer" array="False" size=""/>
+            <declare name="minor" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Inserisci il numero: &quot;" newline="True"/>
+            <do expression="n &lt; 2">
+                <input variable="n"/>
+            </do>
+            <assign variable="delta" expression="0"/>
+            <assign variable="divisore" expression="1"/>
+            <while expression="(divisore == 1 || divisore == n) &amp;&amp; (divisore + delta) &lt; n">
+                <assign variable="delta" expression="delta + 1"/>
+                <if expression="n % (divisore + delta) == 0">
+                    <then>
+                        <assign variable="divisore" expression="divisore + delta"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <if expression="divisore == n">
+                <then>
+                    <output expression="&quot;Il numero &#232; primo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Il numero non &#232; primo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

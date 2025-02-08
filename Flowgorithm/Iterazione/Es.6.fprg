@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.1"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-07 08:57:23 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA3OyIwODowNTowNiAiOzIyNjA="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA3OyIwODo1NzoyMyAiOzk7MjM4Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, temp" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;Inserisci temp&quot; &amp; i &amp; &quot;: &quot;" newline="True"/>
+                <input variable="temp"/>
+                <if expression="temp &gt;= 25">
+                    <then>
+                        <output expression="&quot;caldo&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="temp &gt;= 15">
+                            <then>
+                                <output expression="&quot;caldino&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;freddino&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

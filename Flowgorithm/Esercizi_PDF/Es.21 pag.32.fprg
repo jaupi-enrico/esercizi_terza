@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.14 pag.32"/>
+        <attribute name="authors" value="enric"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-06 10:54:14 "/>
+        <attribute name="created" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yOTsiMDQ6MDc6NDkgIjsyNTM3"/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0xMC0wNjsiMTA6NTQ6MTQgIjsxNTsyNjc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, sum, num, i, j, delta" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci n: &quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n % 4 == 0">
+                <then>
+                    <assign variable="n" expression="n / 4"/>
+                    <for variable="i" start="n" end="1" direction="dec" step="1">
+                        <assign variable="sum" expression="0"/>
+                        <for variable="j" start="4" end="1" direction="dec" step="1">
+                            <output expression="&quot;Inserisci num&quot; &amp; (5 - j) &amp; &quot;: &quot;" newline="True"/>
+                            <input variable="num"/>
+                            <assign variable="sum" expression="sum + num"/>
+                        </for>
+                        <output expression="&quot;La somma dei 4 numeri &#232; &quot; &amp; sum" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <assign variable="delta" expression="n % 4"/>
+                    <assign variable="n" expression="n / 4"/>
+                    <for variable="i" start="n" end="1" direction="dec" step="1">
+                        <assign variable="sum" expression="0"/>
+                        <for variable="j" start="4" end="1" direction="dec" step="1">
+                            <output expression="&quot;Inserisci num&quot; &amp; (5 - j) &amp; &quot;: &quot;" newline="True"/>
+                            <input variable="num"/>
+                            <assign variable="sum" expression="sum + num"/>
+                        </for>
+                        <output expression="&quot;La somma dei 4 numeri &#232; &quot; &amp; sum" newline="True"/>
+                    </for>
+                    <assign variable="sum" expression="0"/>
+                    <for variable="j" start="delta" end="1" direction="dec" step="1">
+                        <output expression="&quot;Inserisci num&quot; &amp; (5 - j) &amp; &quot;: &quot;" newline="True"/>
+                        <input variable="num"/>
+                        <assign variable="sum" expression="sum + num"/>
+                    </for>
+                    <output expression="&quot;La somma dei &quot; &amp; delta &amp; &quot; numeri &#232; &quot; &amp; sum" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

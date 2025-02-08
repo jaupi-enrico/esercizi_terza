@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.14 pag.32"/>
+        <attribute name="authors" value="enric"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-10 02:51:02 "/>
+        <attribute name="created" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yOTsiMDQ6MDc6NDkgIjsyNTM3"/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0xMC0xMDsiMDI6NTE6MDIgIjsxMTsyNjYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, e, i, num" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci b: &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Inserisci e: &quot;" newline="True"/>
+            <input variable="e"/>
+            <assign variable="num" expression="b"/>
+            <if expression="e &gt; 0">
+                <then>
+                    <for variable="i" start="1" end="e-1" direction="inc" step="1">
+                        <assign variable="num" expression="num * b"/>
+                    </for>
+                    <output expression="&quot;Il numero finale b^e risultua: &quot; &amp; num" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="e" expression="-e"/>
+                    <for variable="i" start="1" end="e-1" direction="inc" step="1">
+                        <assign variable="num" expression="num * b"/>
+                    </for>
+                    <output expression="&quot;Il numero finale b^e risultua: 1 / &quot; &amp; num" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

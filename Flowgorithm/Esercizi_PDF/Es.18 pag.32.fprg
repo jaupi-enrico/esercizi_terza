@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.14 pag.32"/>
+        <attribute name="authors" value="enric"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-30 07:45:21 "/>
+        <attribute name="created" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yOTsiMDQ6MDc6NDkgIjsyNTM3"/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0zMDsiMDc6NDU6MjEgIjs0OzI2MzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, lastn, quantity" type="Integer" array="False" size=""/>
+            <declare name="order" type="Boolean" array="False" size=""/>
+            <assign variable="order" expression="true"/>
+            <assign variable="lastn" expression="0"/>
+            <output expression="&quot;Inserisci quanti numeri vuoi inserire: &quot;" newline="True"/>
+            <input variable="quantity"/>
+            <while expression="quantity &gt;= 1">
+                <output expression="&quot;Inserisci il numero: &quot;" newline="True"/>
+                <input variable="n"/>
+                <if expression="lastn &gt; n">
+                    <then>
+                        <assign variable="order" expression="false"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="lastn" expression="n"/>
+                <assign variable="quantity" expression="quantity - 1"/>
+            </while>
+            <if expression="order == true">
+                <then>
+                    <output expression="&quot;I numeri forniti sono in ordine crescente&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;I numeri forniti non sono in ordine crescente&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

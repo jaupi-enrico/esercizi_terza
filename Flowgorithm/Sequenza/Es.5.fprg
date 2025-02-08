@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.5"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 01:09:37 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTowMzo1MiAiOzIyNTk="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTowNDowMiAiOzE7NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIxMjo1NzowNiAiO0VzLjIuZnByZzs1NTA3"/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTowOTozNyAiOzE7MjM3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Giorno, Mese, Anno" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il giorno: &quot;" newline="True"/>
+            <input variable="Giorno"/>
+            <output expression="&quot;Inserisci il mese: &quot;" newline="True"/>
+            <input variable="Mese"/>
+            <output expression="&quot;Inserisci l'anno: &quot;" newline="True"/>
+            <input variable="Anno"/>
+            <if expression="Giorno &lt;= 30 &amp;&amp; Giorno &gt;= 1 &amp;&amp; Mese &lt;= 12 &amp;&amp; Mese &gt;= 1 &amp;&amp; Anno &lt;= 2023 &amp;&amp; Anno &gt;= 1900">
+                <then>
+                    <output expression="Giorno &amp; &quot;-&quot; &amp; Mese &amp; &quot;-&quot; &amp; Anno" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Data non valida&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

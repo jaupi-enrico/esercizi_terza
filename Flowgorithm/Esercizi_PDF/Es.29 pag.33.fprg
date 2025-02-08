@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.31 pag.33"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-06 02:47:15 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTMwOyIwODozNjowNCAiOzIyNjY="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTMwOyIwODo1NjoyNCAiOzQ7MjM4MQ=="/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0xMC0wNjsiMDI6NDc6MTUgIjs2OzI2MzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, denom, temp" type="Integer" array="False" size=""/>
+            <declare name="Min" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Inserisci il numeratore: &quot;" newline="True"/>
+            <input variable="num"/>
+            <output expression="&quot;Inserisci il denominatore: &quot;" newline="True"/>
+            <do expression="denom = 0">
+                <input variable="denom"/>
+            </do>
+            <do expression="Min == false">
+                <assign variable="Min" expression="true"/>
+                <assign variable="temp" expression="1"/>
+                <while expression="temp &lt;= denom">
+                    <assign variable="temp" expression="temp + 1"/>
+                    <if expression="denom % temp == 0 &amp;&amp; num % temp == 0">
+                        <then>
+                            <assign variable="num" expression="num / temp"/>
+                            <assign variable="denom" expression="denom / temp"/>
+                            <assign variable="Min" expression="false"/>
+                        </then>
+                        <else/>
+                    </if>
+                </while>
+            </do>
+            <output expression="&quot;La frazione semplificata &#232;: &quot; &amp; num &amp; &quot; / &quot; &amp; denom" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

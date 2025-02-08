@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.8"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 01:41:09 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTozNjozNyAiOzIyNjg="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTozNjozOSAiOzE7NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMToyOTozMiAiO0VzLjcuZnByZzs1NTIz"/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTo0MTowOSAiOzE7MjM3MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Punteggio" type="Integer" array="False" size=""/>
+            <declare name="Valutazione" type="String" array="False" size=""/>
+            <output expression="&quot;Inserisci il punteggio: &quot;" newline="True"/>
+            <input variable="Punteggio"/>
+            <if expression="Punteggio &lt;= 40">
+                <then>
+                    <assign variable="Valutazione" expression="&quot;E&quot;"/>
+                </then>
+                <else>
+                    <if expression="Punteggio &gt;= 41 &amp;&amp; Punteggio &lt;= 60">
+                        <then>
+                            <assign variable="Valutazione" expression="&quot;D&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="Punteggio &gt;= 61 &amp;&amp; Punteggio &lt;= 70">
+                                <then>
+                                    <assign variable="Valutazione" expression="&quot;C&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="Punteggio &gt;= 71 &amp;&amp; Punteggio &lt;= 85">
+                                        <then>
+                                            <assign variable="Valutazione" expression="&quot;B&quot;"/>
+                                        </then>
+                                        <else>
+                                            <if expression="Punteggio &gt;= 86 &amp;&amp; Punteggio &lt;= 100">
+                                                <then>
+                                                    <assign variable="Valutazione" expression="&quot;A&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;valutazione non valida&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;La valutazione &#232;: &quot; &amp; Valutazione" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

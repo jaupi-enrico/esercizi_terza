@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.1"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-07 08:22:02 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA3OyIwODowNTowNiAiOzIyNjA="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA3OyIwODoyMjowMiAiOzQ7MjM2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, N, num0, numPos, numNeg" type="Integer" array="False" size=""/>
+            <assign variable="num0" expression="0"/>
+            <assign variable="numPos" expression="0"/>
+            <assign variable="numNeg" expression="0"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;Inserisci Num&quot; &amp; i &amp; &quot;: &quot;" newline="True"/>
+                <input variable="N"/>
+                <if expression="N &gt; 0">
+                    <then>
+                        <assign variable="numPos" expression="numPos + 1"/>
+                    </then>
+                    <else>
+                        <if expression="N == 0">
+                            <then>
+                                <assign variable="num0" expression="num0 + 1"/>
+                            </then>
+                            <else>
+                                <assign variable="numNeg" expression="numNeg + 1"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;programma terminato dopo &quot; &amp; numPos &amp; &quot; numeri positivi, &quot; &amp; num0 &amp; &quot; numeri nulli e &quot; &amp; numNeg &amp; &quot; numeri negativi&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.14 pag.32"/>
+        <attribute name="authors" value="enric"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-06 10:37:00 "/>
+        <attribute name="created" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yOTsiMDQ6MDc6NDkgIjsyNTM3"/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0xMC0wNjsiMTA6Mzc6MDAgIjs3OzI2MjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, Prd" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci n: &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="Prd" expression="1"/>
+            <while expression="n &gt; 0">
+                <assign variable="Prd" expression="Prd * n"/>
+                <assign variable="n" expression="n - 1"/>
+            </while>
+            <output expression="&quot;Il fattoriale &#232; &quot; &amp; Prd" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

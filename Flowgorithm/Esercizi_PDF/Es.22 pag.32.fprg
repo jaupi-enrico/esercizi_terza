@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.14 pag.32"/>
+        <attribute name="authors" value="enric"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-06 11:01:50 "/>
+        <attribute name="created" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yOTsiMDQ6MDc6NDkgIjsyNTM3"/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0xMC0wNjsiMTE6MDE6NTAgIjsxODsyNjcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="money, years" type="Integer" array="False" size=""/>
+            <declare name="interest" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci i soldi iniziali: &quot;" newline="True"/>
+            <input variable="money"/>
+            <output expression="&quot;Inserisci il tasso d'interesse in percentuale (esempio = 10): &quot;" newline="True"/>
+            <input variable="interest"/>
+            <assign variable="interest" expression="interest / 100 + 1"/>
+            <output expression="&quot;Inserisci gli anni: &quot;" newline="True"/>
+            <input variable="years"/>
+            <while expression="years &gt; 0">
+                <assign variable="money" expression="money * interest"/>
+                <assign variable="years" expression="years - 1"/>
+            </while>
+            <output expression="&quot;I soldi finali sono: &quot; &amp; money" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

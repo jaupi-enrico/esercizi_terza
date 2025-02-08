@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.1"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-08 01:54:22 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA3OyIwODowNTowNiAiOzIyNjA="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA4OyIwMTo0NDowOSAiOzE7NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTMwOyIwODozNjowNCAiO0VzLjI4IHBhZy4zMy5mcHJnOzYwNTc="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA4OyIwMTo1NDoyMiAiOzM0OzI0MTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, divisore, delta, sum" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il numero: &quot;" newline="True"/>
+            <do expression="num &lt;= 0">
+                <input variable="num"/>
+            </do>
+            <assign variable="delta" expression="0"/>
+            <assign variable="divisore" expression="1"/>
+            <assign variable="sum" expression="0"/>
+            <while expression="(divisore + delta) &lt; num">
+                <if expression="num % (divisore + delta) == 0">
+                    <then>
+                        <assign variable="divisore" expression="divisore + delta"/>
+                        <assign variable="sum" expression="sum + divisore"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="delta" expression="delta + 1"/>
+            </while>
+            <output expression="" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

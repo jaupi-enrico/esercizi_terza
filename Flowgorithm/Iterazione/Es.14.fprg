@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.1"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-08 01:07:58 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA3OyIwODowNTowNiAiOzIyNjA="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA4OyIwMTowNzo1OCAiOzI1OzI0MjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, i, num" type="Integer" array="False" size=""/>
+            <declare name="dispari" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Inserisci N: &quot;" newline="True"/>
+            <input variable="N"/>
+            <assign variable="dispari" expression="false"/>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <output expression="&quot;inserisci num&quot; &amp; i" newline="True"/>
+                <input variable="num"/>
+                <if expression="num % 2 != 0">
+                    <then>
+                        <assign variable="dispari" expression="true"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="dispari == true">
+                <then>
+                    <output expression="&quot;almeno un numero &#232; dispari&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;non sono presenti numeri dispari&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

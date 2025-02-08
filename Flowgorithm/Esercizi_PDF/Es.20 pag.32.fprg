@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.14 pag.32"/>
+        <attribute name="authors" value="enric"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-10 02:57:19 "/>
+        <attribute name="created" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yOTsiMDQ6MDc6NDkgIjsyNTM3"/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0xMC0xMDsiMDI6NTc6MTkgIjsxODsyNjgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, num1, num2, sum, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci n: &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="num1" expression="0"/>
+            <assign variable="num2" expression="1"/>
+            <if expression="n == 1">
+                <then>
+                    <output expression="&quot;La &quot; &amp; n &amp; &quot; cifra della successione di fibonaccio &#232; &quot; &amp; num1" newline="True"/>
+                </then>
+                <else>
+                    <for variable="i" start="3" end="n" direction="inc" step="1">
+                        <assign variable="sum" expression="num1 + num2"/>
+                        <assign variable="num1" expression="num2"/>
+                        <assign variable="num2" expression="sum"/>
+                    </for>
+                    <output expression="&quot;La &quot; &amp; n &amp; &quot; cifra della successione di fibonaccio &#232; &quot; &amp; num2" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

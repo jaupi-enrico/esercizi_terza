@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.31 pag.33"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-30 08:56:24 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTMwOyIwODozNjowNCAiOzIyNjY="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTMwOyIwODo1NjoyNCAiOzQ7MjM4MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, m, result" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il primo numero: &quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;Inserisci il secondo numero: &quot;" newline="True"/>
+            <input variable="m"/>
+            <assign variable="result" expression="0"/>
+            <while expression="n &gt;= 1">
+                <if expression="n % 2 != 0">
+                    <then>
+                        <assign variable="result" expression="result + m"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="n" expression="n / 2"/>
+                <assign variable="m" expression="m * 2"/>
+            </while>
+            <output expression="&quot;Il numero ottenuto &#232;: &quot; &amp; result" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

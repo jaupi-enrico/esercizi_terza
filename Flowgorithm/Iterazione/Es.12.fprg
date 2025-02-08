@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.1"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-08 12:44:14 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA3OyIwODowNTowNiAiOzIyNjA="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTEwLTA4OyIxMjo0NDoxNCAiOzE4OzI0MjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, i, sum" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci il numero di numeri: &quot;" newline="True"/>
+            <input variable="N"/>
+            <declare name="numeri" type="Integer" array="True" size="N"/>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <output expression="&quot;Inserisci num&quot; &amp; i &amp; &quot;: &quot;" newline="True"/>
+                <input variable="numeri[i-1]"/>
+                <if expression="(i - 1) % 2 == 0">
+                    <then>
+                        <assign variable="sum" expression="sum + numeri[i - 1]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;la somma dei numeri in posizione pari &#232; &quot; &amp; sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

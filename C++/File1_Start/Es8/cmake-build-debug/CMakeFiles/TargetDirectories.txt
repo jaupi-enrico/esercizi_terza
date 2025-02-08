@@ -1,0 +1,3 @@
+C:/Users/78313537/OneDrive - IIS Castelli/Informatica/C++/File1/Es8/cmake-build-debug/CMakeFiles/Es8.dir
+C:/Users/78313537/OneDrive - IIS Castelli/Informatica/C++/File1/Es8/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/78313537/OneDrive - IIS Castelli/Informatica/C++/File1/Es8/cmake-build-debug/CMakeFiles/rebuild_cache.dir

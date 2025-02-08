@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Area_Cerchio"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-17 01:45:13 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyNDsyMDI0LTA5LTE3OyIwMTozNTowOSAiOzIyNjk="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyNDsyMDI0LTA5LTE3OyIwMTo0NToxMyAiOzI7MjM3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Raggio, Area" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci il raggio:&quot;" newline="True"/>
+            <input variable="Raggio"/>
+            <assign variable="Area" expression="Raggio*Raggio*Pi"/>
+            <output expression="&quot;L'area del cerchio &#232; di: &quot; &amp; Area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

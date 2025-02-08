@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.14 pag.32"/>
+        <attribute name="authors" value="enric"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-06 11:11:37 "/>
+        <attribute name="created" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yOTsiMDQ6MDc6NDkgIjsyNTM3"/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0xMC0wNjsiMTE6MTE6MzcgIjsyMjsyNjcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, noriginal, number, max, times" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci n: &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="noriginal" expression="n + 1"/>
+            <assign variable="max" expression="0"/>
+            <while expression="n &gt; 0">
+                <output expression="&quot;Inserisci num &quot; &amp; (noriginal - n) &amp; &quot; :&quot;" newline="True"/>
+                <input variable="number"/>
+                <if expression="number &gt; max">
+                    <then>
+                        <assign variable="max" expression="number"/>
+                        <assign variable="times" expression="1"/>
+                    </then>
+                    <else>
+                        <if expression="number = max">
+                            <then>
+                                <assign variable="times" expression="times + 1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="n" expression="n - 1"/>
+            </while>
+            <output expression="&quot;Il numero maggiore &#232; &quot; &amp; max &amp; &quot; ed &#232; comparso &quot; &amp; times &amp; &quot; volte&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

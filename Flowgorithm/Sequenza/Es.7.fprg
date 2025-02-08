@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.7"/>
+        <attribute name="authors" value="78313537"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 01:36:25 "/>
+        <attribute name="created" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMToyOTozMiAiOzIyNjU="/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMToyOTozMyAiOzE7NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMToxMTozMiAiO0VzLjYuZnByZzs1NTA5"/>
+        <attribute name="edited" value="NzgzMTM1Mzc7SU5GTzA1UEMyMzsyMDI0LTA5LTI0OyIwMTozNjoyNSAiOzE7MjM3Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Importo, Sconto" type="Real" array="False" size=""/>
+            <output expression="&quot;Inserisci l'importo: &quot;" newline="True"/>
+            <input variable="Importo"/>
+            <if expression="Importo &lt; 50">
+                <then>
+                    <assign variable="Sconto" expression="Importo * 0.05"/>
+                    <assign variable="Importo" expression="Importo * 0.95"/>
+                </then>
+                <else>
+                    <if expression="Importo &gt;= 50 &amp;&amp; Importo &lt;= 100">
+                        <then>
+                            <assign variable="Sconto" expression="Importo * 0.10"/>
+                            <assign variable="Importo" expression="Importo * 0.9"/>
+                        </then>
+                        <else>
+                            <if expression="Importo &lt; 100">
+                                <then>
+                                    <assign variable="Sconto" expression="Importo * 0.20"/>
+                                    <assign variable="Importo" expression="Importo * 0.8"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Lo sconto &#232;: &quot; &amp; Sconto" newline="True"/>
+            <output expression="&quot;L'importo finale &#232;: &quot; &amp; Importo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Es.11"/>
+        <attribute name="authors" value="enric"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 05:32:50 "/>
+        <attribute name="created" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yNDsiMDU6MjQ6MzAgIjsyNTIy"/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yNDsiMDU6MjQ6MzQgIjsxOzc4MzEzNTM3O0lORk8wNVBDMjM7MjAyNC0wOS0yNDsiMDE6NDE6MTUgIjtFcy4xMC5mcHJnOzU4MTY="/>
+        <attribute name="edited" value="ZW5yaWM7UEMtUFJFREFUT1I7MjAyNC0wOS0yNDsiMDU6MzI6NTAgIjsyOzI2MzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num1, Num2, Num3, NumTemp" type="Real" array="False" size=""/>
+            <output expression="&quot;inserisci il primo numero: &quot;" newline="True"/>
+            <input variable="Num1"/>
+            <output expression="&quot;inserisci il secondo numero: &quot;" newline="True"/>
+            <input variable="Num2"/>
+            <output expression="&quot;inserisci il terzo numero: &quot;" newline="True"/>
+            <input variable="Num3"/>
+            <if expression="Num1 &gt; Num2">
+                <then>
+                    <assign variable="NumTemp" expression="Num1"/>
+                    <assign variable="Num1" expression="Num2"/>
+                    <assign variable="Num2" expression="NumTemp"/>
+                    <if expression="Num2 &gt; Num3">
+                        <then>
+                            <assign variable="NumTemp" expression="Num2"/>
+                            <assign variable="Num2" expression="Num3"/>
+                            <assign variable="Num3" expression="NumTemp"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Num2 &gt; Num3">
+                        <then>
+                            <assign variable="NumTemp" expression="Num2"/>
+                            <assign variable="Num2" expression="Num3"/>
+                            <assign variable="Num3" expression="NumTemp"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <if expression="Num1 &gt; Num2">
+                <then>
+                    <assign variable="NumTemp" expression="Num1"/>
+                    <assign variable="Num1" expression="Num2"/>
+                    <assign variable="Num2" expression="NumTemp"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;I numeri in ordine sono: &quot; &amp; Num1 &amp; &quot; &quot; &amp; Num2 &amp; &quot; &quot; &amp; Num3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
