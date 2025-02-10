@@ -9,95 +9,182 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: #f7f5f3;
+            color: #333;
+            line-height: 1.6;
+        }
+        header, footer {
+            background-color: #f0e7dc;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .flexing {
             display: flex;
             align-items: center;
             gap: 20px;
+            flex-wrap: wrap;
         }
         .logo {
-            max-width: 20%;
+            max-width: 10%;
             height: auto;
             padding: 5px;
         }
         .logo_footer{
-            max-width: 10%;
+            max-width: 80px;
             height: auto;
+        }
+        h1, h2, h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        p {
+            margin-bottom: 15px;
         }
         .table{
             padding: 5px;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #04AA6D;
+            color: white;
+        }
+        .button {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #038c58;
+        }
+        footer div {
+            text-align: center;
+        }
+        footer a {
+            color: #0483aa;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <div class="container" style="background-color: rgb(239, 234, 230);">
+    <header>
         <img class="logo" src="img/logo_tucano.jpg" alt="Foto di un tucano">
         <div>
             <h1>Tucani Show Program</h1>
             <h2>Il festival del tucano</h2>
         </div>
-    </div>
+        <div style="display: inline;">
+            <button class="button">Mostra il tuo tucano</button>
+        </div>
+    </header>
     <div style="margin: 20px;">
         <h2>Descrizione:</h2>
-        <p>Il tucani show program è il festival numero 1° in Europa per i tucani. In esposizione ci sono 191 Tucani, con la possibilità di mostrare il proprio tucano la mondo. Per mostrare il tuo tucano, contattare il gestore Enrico Juapi</p>
+        <p>Il tucani show program è il festival numero <strong>1° in Europa</strong> per i tucani. 
+            In esposizione ci sono <strong>191</strong> Tucani, con la possibilità di mostrare il proprio tucano la mondo.</p>
     </div>
-    <div style="margin: 20px;">
+    <section style="margin: 20px;">
         <h2>I nostri tucani:</h2>
-        <div class="container">
-            <img src="img/tucano1.jpg" alt="Tucano1" style="width: 33%;">
-            <img src="img/tucano2.jpg" alt="Tucano2" style="width: 33%;>
-            <img src="img/tucano3.jpg" alt="Tucano3" style="width: 33%;>
+        <div class="flexing">
+            <img src="img/tucano1.jpg" alt="Tucano Qui" style="width: 30%;">
+            <img src="img/tucano2.jpg" alt="Tucano Quo" style="width: 30%;">
+            <img src="img/tucano3.jpg" alt="Tucano Qua" style="width: 30%;">
         </div>
-    </div>
-    <div class="container" style="margin: 20px;">
-        <table border="1" class="table">
-            <tr>
-                <th>Orari</th>
-                <th>1h</th>
-                <th>3h</th>
-                <th>5h</th>
-            </tr>
-                <td>Dalle 9:00</td>
-                <td>10€</td>
-                <td>20€</td>
-                <td>30€</td>
-            <tr>
-                <td>Dalle 11:00</td>
-                <td>20€</td>
-                <td>30€</td>
-                <td>40€</td>
-            </tr>
-            <tr>
-                <td>Dalle 13:00</td>
-                <td>30€</td>
-                <td>40€</td>
-                <td>50€</td>
-            </tr>
-        </table>
-        <div>
+    </section>
+
+    <section style="margin: 20px;">
+        <h2>La nostra storia:</h2>
+        <p>Il tucani show program è un evento nato in ricordo del tucano Berry, 
+            il tucano che portò gioia in giovane età all'ideatore di questo festival.
+            
+        </p>
+    </section>
+    
+    <section class="flexing" style="margin: 20px;">
+        <div style="flex: 1;">
+            <h2>Prezzi e orari:</h2>
+            <table border="1" class="table">
+                <tr>
+                    <th>Orari</th>
+                    <th>1h</th>
+                    <th>3h</th>
+                    <th>5h</th>
+                </tr>
+                    <td>Dalle 9:00</td>
+                    <td>10€</td>
+                    <td>20€</td>
+                    <td>30€</td>
+                <tr>
+                    <td>Dalle 11:00</td>
+                    <td>20€</td>
+                    <td>30€</td>
+                    <td>40€</td>
+                </tr>
+                <tr>
+                    <td>Dalle 13:00</td>
+                    <td>30€</td>
+                    <td>40€</td>
+                    <td>50€</td>
+                </tr>
+            </table>
+        </div>
+        <div style="flex: 1;">
             <h2>Giorni di apertura</h2>
             <p>Martedì 9 - 18 <br> Mercoledì 9 - 18 <br> Venerdì 9 - 16
             </p>
         </div>
-    </div>
-
-    <iframe style="margin: 20px;" width="560" height="315" src="https://www.youtube.com/embed/OiVcaVz58HA?si=4MFk1ijR7H62ykIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section style="margin: 20px;">
+        <h2>Ciò da sapere sui tucani:</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OiVcaVz58HA?si=4MFk1ijR7H62ykIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
     
-    <footer class="container" style="background-color: rgb(239, 234, 230);">
-        <div style="width: 30%;">
-            <div class="container">
-                <img class="logo" src="img/logo_tucano.jpg" alt="Foto di un tucano">
-                <div class="container">
+    <footer>
+        <div style="width: 60%;">
+            <div class="flexing">
+                <img class="logo" src="img/logo_tucano.jpg" alt="Logo Tucano">
+                <div class="flexing">
                     <h3>Tucani Show Program</h3>
                     <p>&copy; 2025 TucaniShow S.R.L.</p>
                 </div>
             </div>
         </div>
-        <div style="width: 30%; text-align: center;">
+        <div>
             <h3>Contatti:</h3>
             <p>Enrico Jaupi<br><a href="mailto:jaupi.enrico@gmail.com">jaupi.enrico@gmail.com</a></p>
         </div>
-        <div style="width: 30%; text-align: center;">
+        <div>
             <h3>Social media:</h3>
             <p>Instagram <br><a href="https://www.instagram.com/Tucani_Show/">@Tucani_Show</a><br>
                 Youtube <br><a href="https://www.youtube.com/@Tucani_Show">Tucani_Show</a></p>
