@@ -33,6 +33,8 @@
     <figcaption> = didascalia immagine
 </figure>
 <a href="link">Testo</a> = Link sul testo (Se metto "#id" scorre la pagina fino all'id)
+                        (name = finta variabile html per indicare un elemento)
+                        (target = "_blank" per andare su una pagina nuova)
 suddivisione tabella {
 <thead> = intestazione
 <tbody> = contenuto
