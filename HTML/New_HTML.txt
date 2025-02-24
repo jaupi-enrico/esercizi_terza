@@ -32,7 +32,7 @@
     }
     <figcaption> = didascalia immagine
 </figure>
-
+<a href="link">Testo</a> = Link sul testo (Se metto "#id" scorre la pagina fino all'id)
 suddivisione tabella {
 <thead> = intestazione
 <tbody> = contenuto
