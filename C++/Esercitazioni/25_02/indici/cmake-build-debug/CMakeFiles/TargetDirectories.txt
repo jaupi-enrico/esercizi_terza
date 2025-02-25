@@ -1,0 +1,3 @@
+D:/Scuola/Github/esercizi_terza/C++/Esercitazioni/25_02/indici/cmake-build-debug/CMakeFiles/indici.dir
+D:/Scuola/Github/esercizi_terza/C++/Esercitazioni/25_02/indici/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Scuola/Github/esercizi_terza/C++/Esercitazioni/25_02/indici/cmake-build-debug/CMakeFiles/rebuild_cache.dir
