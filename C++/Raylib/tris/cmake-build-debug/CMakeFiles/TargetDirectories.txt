@@ -1,0 +1,3 @@
+C:/Users/alex/Desktop/lezioni/appunti_terza/programmazione/matrici/tris/cmake-build-debug/CMakeFiles/tris.dir
+C:/Users/alex/Desktop/lezioni/appunti_terza/programmazione/matrici/tris/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/alex/Desktop/lezioni/appunti_terza/programmazione/matrici/tris/cmake-build-debug/CMakeFiles/rebuild_cache.dir
