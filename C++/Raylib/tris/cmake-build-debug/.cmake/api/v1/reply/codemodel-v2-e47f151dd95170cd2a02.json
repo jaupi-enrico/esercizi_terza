@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/alex/Desktop/lezioni/appunti_terza/programmazione/matrici/tris/cmake-build-debug",
-		"source" : "C:/Users/alex/Desktop/lezioni/appunti_terza/programmazione/matrici/tris"
+		"build" : "D:/Classi/3AI/Enrico_Jaupi/Github/esercizi_terza/C++/Raylib/tris/cmake-build-debug",
+		"source" : "D:/Classi/3AI/Enrico_Jaupi/Github/esercizi_terza/C++/Raylib/tris"
 	},
 	"version" : 
 	{
