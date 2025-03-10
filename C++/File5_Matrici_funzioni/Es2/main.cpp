@@ -1,6 +1,6 @@
 #include <iostream>
 
-const int DIM = 5;
+const int DIM = 100;
 
 int chiedi_dim() {
     int n;
@@ -24,10 +24,12 @@ void show_matrix(int m[][DIM], const int DIM_effettiva) {
 
 bool condition(int m[][DIM], const int DIM_effettiva) {
     for (int i = 0; i < DIM_effettiva; ++i) {
+        int sum = 0;
         for (int j = 0; j < DIM_effettiva; ++j) {
-            if (i % 2 != m[i][j] % 2) {
-                return false;
-            }
+            sum += m[i][j];
+        }
+        if (sum > m[i][i]) {
+            return false;
         }
     }
     return true;
