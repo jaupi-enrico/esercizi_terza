@@ -36,7 +36,7 @@ void disegna(const Texture &immagine, int errori) {
     int w = immagine.width;
     int h = immagine.height;
     for (int i = errori; i < 9; ++i) {
-
+        DrawRectangle((i % 3) * (w / 3), (i / 3) * (h / 3), w / 3, h/3, WHITE);
     }
 }
 
