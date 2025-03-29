@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.5)
-project(raylib_prova)
+project(attento_al_mostro)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(raylib_prova main.cpp)
+add_executable(attento_al_mostro main.cpp)
 
 find_library(RAYLIBRARY raylib lib)
 
-target_link_libraries(raylib_prova LINK_PUBLIC ${RAYLIBRARY} winmm)
+target_link_libraries(attento_al_mostro LINK_PUBLIC ${RAYLIBRARY} winmm)
