@@ -61,6 +61,12 @@ int main(void)
     std::string perso = "Hai perso!";
     inizializza(segreta, attuale);
 
+    Texture mostro = LoadTexture(R"(..\include\img\mostro.jpg)");
+    if (mostro.id == 0) {
+        std::cerr << "Errore: Immagine non caricata correttamente!" << std::endl;
+        return 1;
+    }
+
     InitWindow(screenWidth, screenHeight, s.c_str());
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
@@ -68,7 +74,6 @@ int main(void)
     // Main game loop
     while (!WindowShouldClose() && conta_errori < MAX_ERRORI)    // Detect window close button or ESC key
     {
-
         // Update
         //----------------------------------------------------------------------------------
         char lettera = GetCharPressed();
@@ -90,9 +95,9 @@ int main(void)
         BeginDrawing();
 
         ClearBackground(RAYWHITE);
-
         switch (caso) {
             case (0) : {
+                disegna(mostro, conta_errori);
                 DrawText(attuale.c_str(), 20, 350, 60, BLACK);
                 break;
             }
