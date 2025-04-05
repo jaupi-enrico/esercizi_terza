@@ -1,5 +1,4 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 
 #include "include/raylib.h"
 
@@ -40,39 +39,58 @@ void disegna(const Texture &immagine, int errori) {
     }
 }
 
+std::vector<std::string> carica_parole(const std::string& path) {
+    std::vector<std::string> parole;
+    std::string parola;
+    std::ifstream in(path);
+
+    if (in) {
+        while (in >> parola) {
+            parole.push_back(parola);
+        }
+        if (parole.empty()) {
+            std::cout << "Errore apertura file";
+
+        }
+    }
+    return parole;
+}
+
 int main(void)
 {
+    srand(time(NULL));
     // Initialization
     //--------------------------------------------------------------------------------------
     const int screenWidth = 800;
     const int screenHeight = 450;
 
-    std::string s = "raylib ";
-    s += RAYLIB_VERSION;
-    s += " Hello World";
-
-    const int MAX_ERRORI = 6;
+    const int MAX_ERRORI = 9;
     int conta_errori = 0;
-    int caso = 0;
+    int stato = 0;
     std::string provate, attuale;
 
-    std::string segreta = "armadio";
+    std::string segreta;
     std::string vinto = "Hai vinto!";
     std::string perso = "Hai perso!";
+
+    std::vector<std::string> parole = carica_parole("../assets/parole.txt");
+    segreta = parole.at(rand() % parole.size());
     inizializza(segreta, attuale);
 
-    Texture mostro = LoadTexture(R"(..\include\img\mostro.jpg)");
+    InitWindow(screenWidth, screenHeight, "Attento al mostro");
+
+    Texture2D mostro = LoadTexture("../assets/mostro.png");
+
     if (mostro.id == 0) {
-        std::cerr << "Errore: Immagine non caricata correttamente!" << std::endl;
+        std::cout << "Errore: Immagine non caricata correttamente!" << std::endl;
         return 1;
     }
 
-    InitWindow(screenWidth, screenHeight, s.c_str());
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
 
     // Main game loop
-    while (!WindowShouldClose() && conta_errori < MAX_ERRORI)    // Detect window close button or ESC key
+    while (!WindowShouldClose())    // Detect window close button or ESC key
     {
         // Update
         //----------------------------------------------------------------------------------
@@ -83,7 +101,10 @@ int main(void)
                 conta_errori++;
             }
             if (segreta == attuale) {
-                caso = 1;
+                stato = 1;
+            }
+            if (conta_errori == MAX_ERRORI) {
+                stato = 2;
             }
         }
 
@@ -95,7 +116,7 @@ int main(void)
         BeginDrawing();
 
         ClearBackground(RAYWHITE);
-        switch (caso) {
+        switch (stato) {
             case (0) : {
                 disegna(mostro, conta_errori);
                 DrawText(attuale.c_str(), 20, 350, 60, BLACK);
@@ -106,7 +127,9 @@ int main(void)
                 break;
             }
             case (2) : {
-                DrawText(perso.c_str(), 20, 350, 60, BLACK);
+                DrawText(perso.c_str(), 50, 70, 60, BLACK);
+                DrawText("La parola segreta era: ", 50, 210, 60, BLACK);
+                DrawText(segreta.c_str(), 50, 280, 60, BLACK);
                 break;
             }
             default : {
