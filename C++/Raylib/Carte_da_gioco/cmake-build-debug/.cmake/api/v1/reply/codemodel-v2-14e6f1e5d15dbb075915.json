@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "raylib_prova",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "raylib_prova::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-raylib_prova-Debug-f7e19e8e9ba6b8ebb802.json",
+					"name" : "raylib_prova",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Classi/3AI/Enrico_Jaupi/Github/esercizi_terza/C++/Raylib/Carte_da_gioco/cmake-build-debug",
+		"source" : "D:/Classi/3AI/Enrico_Jaupi/Github/esercizi_terza/C++/Raylib/Carte_da_gioco"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
