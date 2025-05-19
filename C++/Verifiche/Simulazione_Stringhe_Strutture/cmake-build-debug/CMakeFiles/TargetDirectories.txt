@@ -1,0 +1,3 @@
+D:/Scuola/Github/esercizi_terza/C++/Verifiche/Simulazione_Stringhe_Strutture/cmake-build-debug/CMakeFiles/Simulazione_Stringhe_Strutture.dir
+D:/Scuola/Github/esercizi_terza/C++/Verifiche/Simulazione_Stringhe_Strutture/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Scuola/Github/esercizi_terza/C++/Verifiche/Simulazione_Stringhe_Strutture/cmake-build-debug/CMakeFiles/rebuild_cache.dir
