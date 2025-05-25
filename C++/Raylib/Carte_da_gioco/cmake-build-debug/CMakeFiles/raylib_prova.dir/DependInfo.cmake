@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Classi/3AI/Enrico_Jaupi/Github/esercizi_terza/C++/Raylib/Carte_da_gioco/main.cpp" "CMakeFiles/raylib_prova.dir/main.cpp.obj" "gcc" "CMakeFiles/raylib_prova.dir/main.cpp.obj.d"
+  "D:/Scuola/Github/esercizi_terza/C++/Raylib/Carte_da_gioco/main.cpp" "CMakeFiles/raylib_prova.dir/main.cpp.obj" "gcc" "CMakeFiles/raylib_prova.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

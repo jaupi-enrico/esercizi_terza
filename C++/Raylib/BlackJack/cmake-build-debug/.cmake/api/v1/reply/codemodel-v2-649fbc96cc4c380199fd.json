@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "raylib_prova",
+					"name" : "blackjack",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "raylib_prova::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-raylib_prova-Debug-f7e19e8e9ba6b8ebb802.json",
-					"name" : "raylib_prova",
+					"id" : "blackjack::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-blackjack-Debug-d28d538c7ce75d5186dd.json",
+					"name" : "blackjack",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Classi/3AI/Enrico_Jaupi/Github/esercizi_terza/C++/Raylib/Carte_da_gioco/cmake-build-debug",
-		"source" : "D:/Classi/3AI/Enrico_Jaupi/Github/esercizi_terza/C++/Raylib/Carte_da_gioco"
+		"build" : "D:/Scuola/Github/esercizi_terza/C++/Raylib/BlackJack/cmake-build-debug",
+		"source" : "D:/Scuola/Github/esercizi_terza/C++/Raylib/BlackJack"
 	},
 	"version" : 
 	{

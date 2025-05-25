@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\Classi\3AI\Enrico_Jaupi\Clion\CLion 2024.3.5\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\Classi\3AI\Enrico_Jaupi\Clion\CLion 2024.3.5\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Classi\3AI\Enrico_Jaupi\Github\esercizi_terza\C++\Raylib\Carte_da_gioco
+CMAKE_SOURCE_DIR = D:\Scuola\Github\esercizi_terza\C++\Raylib\Carte_da_gioco
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Classi\3AI\Enrico_Jaupi\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Scuola\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/raylib_prova.dir/depend.make
@@ -69,18 +69,18 @@ include CMakeFiles/raylib_prova.dir/progress.make
 include CMakeFiles/raylib_prova.dir/flags.make
 
 CMakeFiles/raylib_prova.dir/main.cpp.obj: CMakeFiles/raylib_prova.dir/flags.make
-CMakeFiles/raylib_prova.dir/main.cpp.obj: D:/Classi/3AI/Enrico_Jaupi/Github/esercizi_terza/C++/Raylib/Carte_da_gioco/main.cpp
+CMakeFiles/raylib_prova.dir/main.cpp.obj: D:/Scuola/Github/esercizi_terza/C++/Raylib/Carte_da_gioco/main.cpp
 CMakeFiles/raylib_prova.dir/main.cpp.obj: CMakeFiles/raylib_prova.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Classi\3AI\Enrico_Jaupi\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raylib_prova.dir/main.cpp.obj"
-	"D:\Classi\3AI\Enrico_Jaupi\Clion\CLion 2024.3.5\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raylib_prova.dir/main.cpp.obj -MF CMakeFiles\raylib_prova.dir\main.cpp.obj.d -o CMakeFiles\raylib_prova.dir\main.cpp.obj -c D:\Classi\3AI\Enrico_Jaupi\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Scuola\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/raylib_prova.dir/main.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/raylib_prova.dir/main.cpp.obj -MF CMakeFiles\raylib_prova.dir\main.cpp.obj.d -o CMakeFiles\raylib_prova.dir\main.cpp.obj -c D:\Scuola\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\main.cpp
 
 CMakeFiles/raylib_prova.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/raylib_prova.dir/main.cpp.i"
-	"D:\Classi\3AI\Enrico_Jaupi\Clion\CLion 2024.3.5\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Classi\3AI\Enrico_Jaupi\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\main.cpp > CMakeFiles\raylib_prova.dir\main.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Scuola\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\main.cpp > CMakeFiles\raylib_prova.dir\main.cpp.i
 
 CMakeFiles/raylib_prova.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/raylib_prova.dir/main.cpp.s"
-	"D:\Classi\3AI\Enrico_Jaupi\Clion\CLion 2024.3.5\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Classi\3AI\Enrico_Jaupi\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\main.cpp -o CMakeFiles\raylib_prova.dir\main.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Scuola\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\main.cpp -o CMakeFiles\raylib_prova.dir\main.cpp.s
 
 # Object files for target raylib_prova
 raylib_prova_OBJECTS = \
@@ -91,11 +91,11 @@ raylib_prova_EXTERNAL_OBJECTS =
 
 raylib_prova.exe: CMakeFiles/raylib_prova.dir/main.cpp.obj
 raylib_prova.exe: CMakeFiles/raylib_prova.dir/build.make
-raylib_prova.exe: D:/Classi/3AI/Enrico_Jaupi/Github/esercizi_terza/C++/Raylib/Carte_da_gioco/lib/libraylib.a
+raylib_prova.exe: D:/Scuola/Github/esercizi_terza/C++/Raylib/Carte_da_gioco/lib/libraylib.a
 raylib_prova.exe: CMakeFiles/raylib_prova.dir/linkLibs.rsp
 raylib_prova.exe: CMakeFiles/raylib_prova.dir/objects1.rsp
 raylib_prova.exe: CMakeFiles/raylib_prova.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Classi\3AI\Enrico_Jaupi\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable raylib_prova.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Scuola\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable raylib_prova.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\raylib_prova.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -107,6 +107,6 @@ CMakeFiles/raylib_prova.dir/clean:
 .PHONY : CMakeFiles/raylib_prova.dir/clean
 
 CMakeFiles/raylib_prova.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Classi\3AI\Enrico_Jaupi\Github\esercizi_terza\C++\Raylib\Carte_da_gioco D:\Classi\3AI\Enrico_Jaupi\Github\esercizi_terza\C++\Raylib\Carte_da_gioco D:\Classi\3AI\Enrico_Jaupi\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\cmake-build-debug D:\Classi\3AI\Enrico_Jaupi\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\cmake-build-debug D:\Classi\3AI\Enrico_Jaupi\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\cmake-build-debug\CMakeFiles\raylib_prova.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Scuola\Github\esercizi_terza\C++\Raylib\Carte_da_gioco D:\Scuola\Github\esercizi_terza\C++\Raylib\Carte_da_gioco D:\Scuola\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\cmake-build-debug D:\Scuola\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\cmake-build-debug D:\Scuola\Github\esercizi_terza\C++\Raylib\Carte_da_gioco\cmake-build-debug\CMakeFiles\raylib_prova.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/raylib_prova.dir/depend
 

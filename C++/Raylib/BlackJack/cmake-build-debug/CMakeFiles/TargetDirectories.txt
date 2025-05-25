@@ -1,0 +1,3 @@
+D:/Scuola/Github/esercizi_terza/C++/Raylib/BlackJack/cmake-build-debug/CMakeFiles/blackjack.dir
+D:/Scuola/Github/esercizi_terza/C++/Raylib/BlackJack/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Scuola/Github/esercizi_terza/C++/Raylib/BlackJack/cmake-build-debug/CMakeFiles/rebuild_cache.dir
